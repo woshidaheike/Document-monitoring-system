@@ -10,10 +10,10 @@ from email.utils import formataddr
 from email.mime.text import MIMEText
 newly_created_files = set()
 API_KEY = "15b945c29bfc1f8578bbcd6f17e9e0be48eafdfcf0795ba98f8e823b8e074b8d" #apikey
-FROM="15225096100@163.com"
-TO='3241986481@qq.com'
-SMTPUSER="15225096100"
-SMTPPW="ABc4n3ANyQfYFsWB"
+FROM="15225096100@163.com" #你的smtp邮箱
+TO='3241986481@qq.com'     #你的接信邮箱
+SMTPUSER="15225096100"     #你的邮箱账号
+SMTPPW="ABc4n3ANyQfYFsWB"  #你的smtp授权码
 #日志函数
 def  log(data):
     with open('log.txt', mode="a",encoding="utf-8") as f:
