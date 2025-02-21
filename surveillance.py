@@ -10,7 +10,6 @@ from email.utils import formataddr
 from email.mime.text import MIMEText
 newly_created_files = set()
 API_KEY = "15b945c29bfc1f8578bbcd6f17e9e0be48eafdfcf0795ba98f8e823b8e074b8d" #apikey
-
 FROM="15225096100@163.com"
 TO='3241986481@qq.com'
 SMTPUSER="15225096100"
