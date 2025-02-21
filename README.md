@@ -12,6 +12,21 @@ pip install -r requirements.txt
 
 #### 2.修改代码
 
+ （1）申请virustotal账号获得api
+
+ （2）申请网易邮箱smtp授权码
+
+ （3）修改代码
+
+ API_KEY=“你的api”
+
+ FROM=“发送信息的邮箱”
+
+ TO=“接受信息的邮箱”
+
+ SMTPUSER=“网易邮箱账号”
+
+ SMTPPW=“你的smtp授权码”
 
 
 
