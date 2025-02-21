@@ -28,6 +28,16 @@ pip install -r requirements.txt
 
  SMTPPW=“你的smtp授权码”
 
+106行 target_folder=“你要监控的目录”（注意双斜线防止转移）
+
+#### 3.运行代码
+
+pyhton surveillance.py
+
+程序默认不会结束想要结束程序ctrl+c即可
+
+
+
 
 
 
