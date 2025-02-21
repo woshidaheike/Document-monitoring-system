@@ -9,11 +9,11 @@ import smtplib
 from email.utils import formataddr
 from email.mime.text import MIMEText
 newly_created_files = set()
-API_KEY = "15b945c29bfc1f8578bbcd6f17e9e0be48eafdfcf0795ba98f8e823b8e074b8d" #apikey
-FROM="15225096100@163.com" #你的smtp邮箱
-TO='3241986481@qq.com'     #你的接信邮箱
-SMTPUSER="15225096100"     #你的邮箱账号
-SMTPPW="ABc4n3ANyQfYFsWB"  #你的smtp授权码
+API_KEY = "" #apikey
+FROM="" #你的smtp邮箱
+TO=''     #你的接信邮箱
+SMTPUSER=""     #你的邮箱账号
+SMTPPW=""  #你的smtp授权码
 #日志函数
 def  log(data):
     with open('log.txt', mode="a",encoding="utf-8") as f:
@@ -103,7 +103,7 @@ class FileChangeHandler(FileSystemEventHandler):
             log(f"{time} 文件 {event.src_path} 的内容已被修改，发出警报！")
 #main函数
 if __name__ == "__main__":
-    target_folder = 'D:\\phpstudy_pro\\WWW\\upload-labs\\upload'  # 这里设置为你要监控的文件夹路径，当前设置为当前目录，可按需修改
+    target_folder = ''  # 这里设置为你要监控的文件夹路径，当前设置为当前目录，可按需修改
     event_handler = FileChangeHandler()
     observer = Observer()
     observer.schedule(event_handler, path=target_folder, recursive=False)
