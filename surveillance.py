@@ -49,6 +49,7 @@ def upload_file_for_analysis(file_path):
                 file_name = attributes.get("meaningful_name", "未知文件名")
                 file_type = attributes.get("type_tag", "未知文件类型")
                 if "last_analysis_stats" in attributes and attributes["last_analysis_stats"]["malicious"] >= 3:
+                    print("文件不安全！！！")
                     mail(file_name, file_type, file_path)
                 else:
                     print("{0}文件安全".format(file_path))
@@ -64,6 +65,7 @@ def upload_file_for_analysis(file_path):
                         file_name = attributes.get("meaningful_name", "未知文件名")
                         file_type = attributes.get("type_tag", "未知文件类型")
                         if "last_analysis_stats" in attributes and attributes["last_analysis_stats"]["malicious"] >= 3:
+                            print("文件不安全！！！")
                             mail(file_name, file_type, file_path)
                         else:
                             print("{0}文件安全".format(file_path))
