@@ -36,7 +36,7 @@ pyhton surveillance.py
 
 程序默认不会结束想要结束程序ctrl+c即可
 
-
+#### log.txt就是生成的日志文件包含文件的操作时间和操作行为
 
 
 
